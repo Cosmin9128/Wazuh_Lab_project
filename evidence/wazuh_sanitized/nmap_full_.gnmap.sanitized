@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Mon Oct 20 20:08:27 2025 as: /usr/lib/nmap/nmap -sS -p- -Pn -T4 -sV -A --reason -oA /home/kali/wazuh-attack-demo/evidence/nmap_full_ <REDACTED_IP>
+Host: <REDACTED_IP> (Attacked)	Status: Up
+Host: <REDACTED_IP> (Attacked)	Ports: 2222/open/tcp//ssh//OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)/	Ignored State: closed (65534)	OS: Linux 4.15 - 5.19	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Mon Oct 20 20:08:47 2025 -- 1 IP address (1 host up) scanned in 19.63 seconds

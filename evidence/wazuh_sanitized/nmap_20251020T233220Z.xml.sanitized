@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Mon Oct 20 19:32:41 2025 as: /usr/lib/nmap/nmap -&#45;privileged -sV -Pn -p 22,80,443 -&#45;reason -&#45;open -oA /home/kali/wazuh-attack-demo/evidence/nmap_20251020T233220Z <REDACTED_IP> -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sV -Pn -p 22,80,443 -&#45;reason -&#45;open -oA /home/kali/wazuh-attack-demo/evidence/nmap_20251020T233220Z <REDACTED_IP>" start="1761003161" startstr="Mon Oct 20 19:32:41 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="<REDACTED_IP>" addrtype="ipv4"/>
+<address addr="x:x:x:x:x:x" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<runstats><finished time="1761003161" timestr="Mon Oct 20 19:32:41 2025" summary="Nmap done at Mon Oct 20 19:32:41 2025; 1 IP address (1 host up) scanned in 0.21 seconds" elapsed="0.21" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

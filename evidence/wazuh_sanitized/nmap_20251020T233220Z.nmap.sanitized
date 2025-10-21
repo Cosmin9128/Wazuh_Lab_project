@@ -1,0 +1,3 @@
+# Nmap 7.95 scan initiated Mon Oct 20 19:32:41 2025 as: /usr/lib/nmap/nmap --privileged -sV -Pn -p 22,80,443 --reason --open -oA /home/kali/wazuh-attack-demo/evidence/nmap_20251020T233220Z <REDACTED_IP>
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 20 19:32:41 2025 -- 1 IP address (1 host up) scanned in 0.21 seconds

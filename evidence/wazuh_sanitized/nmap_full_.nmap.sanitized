@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Mon Oct 20 20:08:27 2025 as: /usr/lib/nmap/nmap -sS -p- -Pn -T4 -sV -A --reason -oA /home/kali/wazuh-attack-demo/evidence/nmap_full_ <REDACTED_IP>
+Nmap scan report for Attacked (<REDACTED_IP>)
+Host is up, received arp-response (0.00069s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE REASON         VERSION
+2222/tcp open  ssh     syn-ack ttl 64 OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 93:27:f4:74:ed:ea:ca:21:26:13:73:02:96:bb:44:df (ECDSA)
+|_  256 0a:91:76:a7:57:79:f1:54:c6:2a:1e:e2:e3:d2:22:e5 (ED25519)
+MAC Address: 08:00:27:32:F3:69 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.19
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.69 ms Attacked (<REDACTED_IP>)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 20 20:08:47 2025 -- 1 IP address (1 host up) scanned in 19.63 seconds
