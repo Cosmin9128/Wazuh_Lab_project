@@ -56,6 +56,26 @@ The lab also showed how Wazuh's compliance checks report basic system configurat
 
 ---
 
+## Nessus Vulnerability Scan
+
+I ran a Nessus basic network scan against the lab host and converted the export to CSV for easier reading. Sensitive data (IP addresses, emails) was redacted before publishing.
+
+**Files**
+- `evidence/sanitized/report_sanitized.csv` — full scan export (sanitized).
+- `evidence/sanitized/nessus_triage_top5.csv` — short triage of the top 5 critical/high findings.
+- `evidence/screenshot_nessus.png` — screenshot of the scan summary .
+
+**Quick results**
+- Total findings: 181  
+- Critical: 9 — immediate attention, patch or mitigate.  
+- High: 5 — prioritize after criticals.  
+- Medium: 23 — plan remediation.  
+- Info/Low: remaining items for hardening or contextual review.
+
+**Notes**
+- The original `.nessus` export is kept private and not included in the public repo.
+
+
 ## Next Steps
 
 I want to build more small labs like this to learn SIEM tuning and threat detection.  
