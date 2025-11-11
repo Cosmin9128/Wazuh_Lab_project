@@ -1,0 +1,6 @@
+plugin_id,plugin_name,cve,severity,port,solution
+171340,Apache Tomcat SEoL (<= 5.5.x),,4,8180,Upgrade to a version of Apache Tomcat that is currently supported.
+134862,Apache Tomcat AJP Connector Request Injection (Ghostcat),"CVE-2020-1745,CVE-2020-1938",4,8009,"Update the AJP configuration to require authorization and/or upgrade the Tomcat server to 7.0.100, 8.5.51, 9.0.31 or later."
+46882,UnrealIRCd Backdoor Detection,CVE-2010-2075,4,6667,"Re-download the software, verify it using the published MD5 / SHA1 checksums, and re-install it."
+61708,VNC Server 'password' Password,,4,5900,Secure the VNC service with a strong password.
+20007,SSL Version 2 and 3 Protocol Detection,,4,5432,Consult the application's documentation to disable SSL 2.0 and 3.0. Use TLS 1.2 (with approved cipher suites) or higher instead.
