@@ -71,10 +71,26 @@ I ran a Nessus basic network scan against the lab host and converted the export 
 - High: 5 — prioritize after criticals.  
 - Medium: 23 — plan remediation.  
 - Info/Low: remaining items for hardening or contextual review.
+  
+---
 
-**Notes**
-- The original `.nessus` export is kept private and not included in the public repo.
+## Top 5 Critical & High Vulnerabilities (Expanded Triage)
 
+## Nessus Vulnerability Triage
+
+After scanning the lab VM (`DMZ-MSEXCHANGE-2013`) with Nessus, I analyzed the top 5 critical/high findings.
+
+| Vulnerability | Severity | CVE | Port | Remediation |
+|---------------|-----------|-----|------|--------------|
+| SMBv1 Remote Code Execution (EternalBlue) | Critical | CVE-2017-0144 | 445/tcp | Disable SMBv1, apply KB4013389 |
+| Apache HTTPD Path Traversal | Critical | CVE-2021-41773 | 80/tcp | Update Apache ≥ 2.4.51 |
+| Exchange Server SSRF (ProxyShell) | Critical | CVE-2021-34473, CVE-2021-34523, CVE-2021-31207 | 443/tcp | Apply latest CU patches |
+| Outdated OpenSSL Version | High | CVE-2022-0778 | 443/tcp | Update OpenSSL |
+| Weak TLS/SSL Cipher Suites | High | — | 443/tcp | Disable weak ciphers, enforce TLS 1.2+ |
+
+The scan showed several exploitable services in default configurations.  
+
+---
 
 ## Next Steps
 
