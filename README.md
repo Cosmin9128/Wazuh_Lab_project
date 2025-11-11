@@ -58,7 +58,7 @@ The lab also showed how Wazuh's compliance checks report basic system configurat
 
 ## Nessus Vulnerability Scan
 
-I ran a Nessus basic network scan against the lab host and converted the export to CSV for easier reading. Sensitive data (IP addresses, emails) was redacted before publishing.
+I ran a Nessus basic network scan against the lab host and converted the export to CSV for easier reading. Sensitive data (IP addresses) was redacted before publishing.
 
 **Files**
 - `evidence/sanitized/report_sanitized.csv` — full scan export (sanitized).
